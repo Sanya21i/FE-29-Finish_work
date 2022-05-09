@@ -1,0 +1,19 @@
+.footer{
+	background-color: rgba(44, 49, 84, 1);
+	padding: 24px 0;
+	p{
+		margin: 0 auto;
+		max-width: 370px;
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		text-transform: capitalize;
+		color: #808080;
+		a {
+			color: #fff;
+		}
+	}
+}

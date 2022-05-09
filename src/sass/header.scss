@@ -1,0 +1,255 @@
+.header {
+	padding: 33px 0 120px;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	@media (max-width:1024px){
+		padding: 33px 0 126px;
+	}
+	@media (max-width:570px){
+		padding: 19px 0 52px;
+	}
+	
+	&::after{
+		content: "";
+		display: block;
+		background-color: rgba(37, 43, 73, 0.8);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	
+
+	
+		
+		&-navigation{
+
+			display: flex;
+			justify-content: space-between;
+			align-self: start;
+			flex-wrap: wrap;
+			&::after{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: #BABBC5;
+				margin-top: 30px;
+				@media (max-width:776px){
+					display: none;
+				}
+
+			}
+			&-logo{
+				@media (max-width:776px){
+					transform: scale(0.9);
+				}
+			}
+			
+			&-main{
+				margin-top: 5px;								
+				display: flex;
+				justify-content: space-around;
+				
+				&-items{
+					@media (max-width:776px){
+						position: fixed;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						
+					}
+				}
+				
+				
+				&-list{
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					@media (max-width:776px){
+						display: none;
+						flex-direction: column;
+						padding: 48px 20px 30px;
+				
+					}
+					
+					li {
+						width: 134px;
+						margin: 0 auto;
+						text-align: center;
+						@media (max-width:1024px){
+							width: 112px;
+						}
+					
+						a {
+						font-family: 'Raleway';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 13px;
+						line-height: 15px;
+						text-align: center;
+						text-transform: uppercase;				
+						color: #FFFFFF;
+						&:active{
+							color: #E71414;
+						}
+						@media (max-width:1024px){
+							font-size: 12px;
+							line-height: 14px;
+						}
+						@media (max-width:776px){
+							font-size: 13px;
+							line-height: 15px;
+						}
+						}
+					position: relative;
+					&:hover
+					{
+						&::after
+						{
+						content: "";
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 3px;						
+						background-color: #BABBC5;
+						margin-top: 35px;
+						}
+						
+					}
+					&:active{&::after
+						{
+						content: "";
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 3px;						
+						background: #E71414;
+						margin-top: 35px;
+						}
+					}
+					}
+				}
+			}
+			&-menu{display: none;}
+			@media (max-width:776px){
+				.header-navigation-menu{
+					position: relative;
+					height: 18px;
+					width: 24px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					&::before,&::after{
+						content: "";
+						background-color: #fff;
+						height: 2px;
+					}
+					span{
+						height: 2px;
+						background-color: #fff;
+					}
+				}	
+			}
+			
+		}
+		&-title{
+			margin-top: 130px;
+			@media (max-width:1024px){				
+				max-width: 755px;
+				margin: 157px auto 0;
+			}
+			@media (max-width:570px){
+				margin-top: 69px;
+				max-width: 290px;
+			}
+			p{
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 900;
+				font-size: 64px;
+				line-height: 75px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				@media (max-width:1024px){
+					font-size: 48px;
+					line-height: 56px;
+					
+				}
+				@media (max-width:570px){
+					font-size: 36px;
+					line-height: 42px;
+				}
+			}
+		}
+		&-text{
+			margin: 32px auto 82px;
+			@media (max-width:1024px){
+				margin: 62px auto 92px;
+			}
+			@media (max-width:570px){
+				margin: 32px auto 51px;
+				max-width: 290px;
+			}
+			p{
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 28px;
+				text-align: center;
+				color: #FFFFFF;
+				@media (max-width:1024px){
+					font-size: 18px;
+					line-height: 21px;
+				}
+				@media (max-width:570px){
+					font-size: 14px;
+					line-height: 16px;
+
+				}
+			}
+		}
+		&-button{
+			display: block;
+			width: 370px;
+			height: 78px;
+			text-align: center;
+			background-color: rgba(255, 67, 67, 1);
+			margin: 0 auto;
+			padding: 24px 0;
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 900;
+			font-size: 24px;
+			line-height: 28px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			transition: 0.8s;
+			&:hover{
+				background: #E71414;
+				transition: 1s;
+			}
+			&:active{
+				box-shadow: 4px 4px 30px #FF4343;
+				transition: 0.2s;
+			}
+			@media (max-width:1024px){
+				width: 314px;
+				height: 78px;
+			}
+			@media (max-width:570px){
+				width: 280px;
+				height: 58px;
+				padding: 16px 0;
+			}
+					
+		}
+}

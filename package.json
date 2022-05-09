@@ -1,0 +1,24 @@
+{
+	"name": "fe-29-finish_work",
+	"version": "1.0.0",
+	"description": "",
+	"source": "src/index.html",
+	"scripts": {
+		"start": "parcel",
+		"build": "parcel build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sanya21i/FE-29-Finish_work.git"
+	},
+	"author": "Aliaksandr Ilyushchenko",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Sanya21i/FEn-29-Finish_work/issues"
+	},
+	"homepage": "https://github.com/Sanya21i/FE-29-Finish_work#readme",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.5.0",
+		"parcel": "^2.5.0"
+	}
+}

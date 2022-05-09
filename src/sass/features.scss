@@ -1,0 +1,118 @@
+.features{
+	margin: 116px auto 133px;
+	@media (max-width:1169px){
+		margin: 87px auto 80px;
+	}
+	@media (max-width:570px){
+		margin: 50px auto 36px;
+	}
+	
+	&-container{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width:780px){
+			justify-content:space-evenly ;
+		}
+		@media (max-width:570px){
+			max-width: 320px;
+			padding: 0 20px;
+			justify-content: center;
+		}
+		
+		.features-card{
+			max-width: 370px;
+			@media (max-width:1169px){
+				max-width: 315px;
+			}
+			@media (max-width:975px){
+				max-width: 250px;
+			}
+			@media (max-width:570px){
+				max-width: 280px;
+			}
+
+		
+			&:nth-child(4), &:nth-child(5), &:nth-child(6){
+				margin-top:97px;
+			}
+			
+			@media (max-width:1169px){
+				&:nth-child(4), &:nth-child(5), &:nth-child(6){
+					margin-top:57px;
+				}
+			}
+			@media (max-width:780px){
+				&:nth-child(3), &:nth-child(4){
+					margin:57px auto 57px;
+				}
+				&:nth-child(5), &:nth-child(6){
+					margin-top:0;
+				}
+			}
+			@media (max-width:570px){
+				margin:0 auto 51px;
+				&:nth-child(3), &:nth-child(4){
+					margin:0 auto 57px;
+				}
+				&:last-child{
+					margin-bottom: 0px;
+				}
+
+			}
+			
+			
+
+			&-logo{
+				display: flex;
+				justify-content: center;
+				@media (max-width:1169px){
+					transform: scale(0.9);
+				}
+				@media (max-width:570px){
+					transform: scale(0.75);
+				}
+			}
+			&-title{
+				margin-top: 58px;
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 900;
+				font-size: 24px;
+				line-height: 28px;
+				text-transform: uppercase;
+				text-align: center;
+				color: #2D3033;
+				@media (max-width:1169px){
+					font-size: 18px;
+					line-height: 21px;
+					margin-top: 48px;
+				}
+			}
+			&-text{
+				text-align: center;
+				margin-top: 48px;	
+				@media (max-width:1169px){
+					margin-top: 26px;
+				}
+				@media (max-width:570px){
+					margin-top: 13px;
+				}
+
+				p{
+					font-family: 'Raleway';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 21px;
+					color: #6C7279;
+					@media (max-width:1169px){
+						font-size: 14px;
+						line-height: 16px;
+					}
+				}
+			}
+
+		}
+	}
+}
