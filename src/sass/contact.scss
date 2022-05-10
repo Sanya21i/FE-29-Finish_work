@@ -95,7 +95,21 @@
 				padding: 10px;
 				border: 1px solid #C6CBCD;
 				font-size: 18px;
+				&:hover{
+					transform: scale(1.2);
+				}
 
+			}
+			.fa-facebook-f:hover{
+				color: rgb(14, 43, 122);
+				
+			}
+			.fa-twitter:hover{
+				color: rgb(46, 114, 201);
+				
+			}
+			.fa-linkedin-in:hover{
+				background-color: rgb(73, 123, 188);
 			}
 		}
 	}
